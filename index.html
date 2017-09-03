@@ -1,17 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>git Test (branch)</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>git Test 06 bootstrap VueJs</title>
+    <!-- Latest compiled and minified CSS -->
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <!--  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+    .row div {
+        border-right: 1px solid red;
+        border-collapse: collapse;
+    }
+    </style>
 </head>
+
 <body>
-	01 second commit testing
-	<div>02 adding tag </div>
-	<div>03 adding tag 2 </div>
-	<ul>
-		<li>111111</li>
-		<li>22222</li>
-	</ul>
-	<div>aaaa</div>
+    01 second commit testing
+    <div>02 adding tag </div>
+    <div class="testBox">03 adding tag 2 </div>
+        <ul>
+            <li>111111</li>
+            <li>22222</li>
+        </ul>
+    <div>aaaa</div>
+    <div id="container">
+    <h1></h1>
+      <label id="myId" class="col-sm-2">{{message}}</label>
+      <input type="text" name=""  class="form-control" value="" required="required" pattern="" title="" v-model="message">
+      <button type="button" class="btn btn-danger">button</button>
+      <button type="button" class="btn btn-large btn-block btn-warning mt10">button</button>
+      <p class="navbar-text pull-right">
+        <a href="#" class="navbar-link">Links</a>
+      </p>
+
+
+
+        <!-- Single button -->
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Action <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+            <div class="col-xs-1">.col-xs-1</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-8">.col-xs-8</div>
+            <div class="col-xs-4">.col-xs-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4">.col-xs-4</div>
+            <div class="col-xs-4">.col-xs-4</div>
+            <div class="col-xs-4">.col-xs-4</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        new Vue({
+            el:'#container',
+            data:{
+                message:'안녕하세요 Vue!'
+            }
+        })
+    </script>
 </body>
+
 </html>
